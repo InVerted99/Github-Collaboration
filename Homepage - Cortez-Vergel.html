@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home — GitHub Collaboration</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--line:#30363d;--txt:#e6edf3;--dim:#8b949e;--accent:#58a6ff}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,sans-serif;
+       display:flex;justify-content:center;padding:48px 20px}
+  main{max-width:720px;width:100%}
+  h1{font-size:2.2rem;letter-spacing:-.5px}
+  h2{font-size:1.1rem;margin:32px 0 12px;color:var(--accent)}
+  p{color:var(--dim)}
+  nav{margin-bottom:28px;font-size:.9rem}
+  nav a{margin-right:16px}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card b{display:block;margin-bottom:4px}
+  .btn{display:inline-block;margin-top:20px;background:var(--card);
+       border:1px solid var(--line);border-radius:8px;padding:10px 18px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;
+         font-size:.85rem;color:var(--dim)}
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <a href="Homepage.html">Home</a>
+    <a href="AboutPage%20-%20%20Cortez-Vergel.html">About</a>
+    <a href="Dashboard.html">Dashboard</a>
+    <a href="ContactUs.html">Contact</a>
+  </nav>
+
+  <h1>GitHub Collaboration</h1>
+  <p>An IPT2 group activity where our team builds one project together — branching,
+     reviewing, and merging the way real development teams do.</p>
+  <a class="btn" href="AboutPage%20-%20%20Cortez-Vergel.html">Learn more about the project →</a>
+
+  <h2>What You'll Find Here</h2>
+  <div class="grid">
+    <div class="card"><b>The Pages</b>Each member owns a page in this repo.</div>
+    <div class="card"><b>The Workflow</b>Branch, commit, pull request, merge.</div>
+    <div class="card"><b>The History</b>Every change tracked in Git.</div>
+  </div>
+
+  <h2>Get Started</h2>
+  <p>Clone the repository, create your own branch, and open a pull request when your
+     page is ready for review.</p>
+
+  <footer>
+    IPT2 — 4th Year · <a href="#">View repository on GitHub</a>
+  </footer>
+</main>
+</body>
+</html>

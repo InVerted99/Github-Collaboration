@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — GitHub Collaboration</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--line:#30363d;--txt:#e6edf3;--dim:#8b949e;--accent:#58a6ff}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,sans-serif;
+       display:flex;justify-content:center;padding:48px 20px}
+  main{max-width:720px;width:100%}
+  h1{font-size:2.2rem;letter-spacing:-.5px}
+  h2{font-size:1.1rem;margin:32px 0 12px;color:var(--accent)}
+  p{color:var(--dim)}
+  .tag{display:inline-block;background:var(--card);border:1px solid var(--line);
+       border-radius:20px;padding:4px 12px;font-size:.85rem;margin:4px 4px 0 0}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card b{display:block;margin-bottom:4px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;
+         font-size:.85rem;color:var(--dim)}
+</style>
+</head>
+<body>
+<main>
+  <h1>GitHub Collaboration</h1>
+  <p>A hands-on IPT2 project where our team learns to build software the way real
+     development teams do — together, with version control.</p>
+
+  <h2>What This Repo Is For</h2>
+  <p>We use this repository to practice the everyday Git workflow: branching off
+     <code>main</code>, opening pull requests, reviewing each other's code, resolving
+     merge conflicts, and keeping a clean commit history.</p>
+
+  <h2>Our Workflow</h2>
+  <div class="grid">
+    <div class="card"><b>1. Branch</b>One feature, one branch.</div>
+    <div class="card"><b>2. Commit</b>Small, clear messages.</div>
+    <div class="card"><b>3. Pull Request</b>Every change gets reviewed.</div>
+    <div class="card"><b>4. Merge</b>Approved code lands on main.</div>
+  </div>
+
+  <h2>Tech &amp; Tools</h2>
+  <div>
+    <span class="tag">Git</span><span class="tag">GitHub</span>
+    <span class="tag">VS Code</span><span class="tag">HTML &amp; CSS</span>
+    <span class="tag">Markdown</span>
+  </div>
+
+  <footer>
+    IPT2 — 4th Year · <a href="#">View repository on GitHub</a>
+  </footer>
+</main>
+</body>
+</html>
