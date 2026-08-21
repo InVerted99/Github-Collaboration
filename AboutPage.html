@@ -1,11 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .team-section {
+            background: #3368A0;
+            color: #ffffff;
+            padding: 20px 20px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .team-section h1 {
+            font-size: clamp(3rem, 12vw, 8rem);
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .team-section p {
+            font-family: 'Playfair Display', serif;
+            opacity: 0.5;
+            max-width: 900px;
+            margin: 0 auto 40px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .team-profile {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+        }
+
+        .team-members {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .leader {
+            font-family: 'Playfair Display', serif;
+            background-color: #F2F2ED;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            padding: 40px 30px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .leader img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .leader p {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+        }
+
+        .leader h2 {
+            margin: 0;
+        }
+
+        .leader h3 {
+            font-size: small;
+            margin: 0 8px;
+            opacity: 0.8;
+        }
+
+        .entire-team {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .idv-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            background-color: #F2F2ED;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            gap: 20px;
+            padding: 40px 30px;
+            width: 260px;
+            margin-top: 40px;
+        }
+
+        .idv-profile img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .profile-description {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+            width: 100%;
+        }
+
+        .profile-description p {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .profile-description h2 {
+            margin: 10px 0;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .leader{
+                flex-direction: column;
+            }
+            .leader-description{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .leader-description p{
+                text-align: justify;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  
+    <div class="team-section">
+        <h1>Our Team</h1>
+        <p>
+            The Team. The People. The Family. <br>
+            That made this thing possible.
+        </p>
+    </div>
+
+    <div class="team-profile">
+        <div class="team-leader">
+            <div class="leader">
+                <img src="./img/cortez.jpg" />
+                <div class="leader-description">
+                    <h2>Vergel Cortez</h2>
+                    <h3>Founder</h3>
+                    <p>
+                        Vergel is the creative mind and the founder of the company. He always experimenting with bold
+                        ideas and new projects. With years of experience, he loves turning
+                        simple ideas into something extraordinary. His passion lies in showing
+                        that great things doesn’t need to be complicated, just made with passion.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="entire-team">Entire Team</h2>
+        <div class="team-members">
+
+            <div class="idv-profile">
+                <img src="./img/rosales.jpg" />
+                <div class="profile-description">
+                    <h2>Shannrei Rosales</h2>
+                    <p>
+                        Executive Manager
+                    </p>
+                </div>
+            </div>
+
+            <div class="idv-profile">
+                <img src="./img/taclibon.jpg" />
+                <div class="profile-description">
+                    <h2>Erman Taclibon</h2>
+                    <p>
+                        HR Executive
+                    </p>
+                </div>
+            </div>
+            <div class="idv-profile">
+                <img src="./img/tolenada.jpg" />
+                <div class="profile-description">
+                    <h2>Carl Tolenada</h2>
+                    <p>
+                        Sales Manager
+                    </p>
+                </div>
+            </div>
+
+            <div class="idv-profile">
+                <img src="./img/ventura.jpg" />
+                <div class="profile-description">
+                    <h2>Haven Ventura</h2>
+                    <p>
+                        Head Developer
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
 </body>
+
 </html>
