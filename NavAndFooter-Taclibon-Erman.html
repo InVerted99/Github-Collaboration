@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navigation &amp; Footer — Group Activity</title>
+<style>
+	:root{--bg:#0d1117;--line:#30363d;--txt:#e6edf3;--dim:#8b949e;--accent:#58a6ff}
+	*{box-sizing:border-box;margin:0}
+	body{background:var(--bg);color:var(--txt);font:16px/1.6 system-ui,sans-serif;
+			display:flex;justify-content:center;padding:48px 20px}
+	main{max-width:720px;width:100%;min-height:calc(100vh - 96px);display:flex;flex-direction:column}
+	nav{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:64px;
+			padding:16px 0;border-bottom:1px solid var(--line)}
+	.brand{color:var(--txt);font-weight:700;white-space:nowrap}
+	.nav-links{display:flex;justify-content:flex-end;gap:40px}
+	a{color:var(--accent);text-decoration:none}
+	a:hover{text-decoration:underline}
+	.nav-links a{color:var(--dim);font-size:.9rem;white-space:nowrap}
+	.nav-links a:hover,.nav-links .active{color:var(--accent)}
+	.content{flex:1;padding:72px 0}
+	h1{font-size:2.2rem;letter-spacing:-.5px;margin-bottom:12px}
+	p{color:var(--dim);max-width:600px}
+	footer{margin-top:auto;border-top:1px solid var(--line);padding-top:16px;font-size:.85rem;color:var(--dim);
+			display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px}
+	.footer-repo{white-space:nowrap}
+	@media (max-width:600px){
+		nav{display:flex;align-items:flex-start;flex-direction:column;gap:12px}
+		.nav-links{justify-content:flex-start;flex-wrap:wrap;gap:8px 16px;transform:none}
+		.content{padding:48px 0}
+		footer{grid-template-columns:1fr}
+		.footer-repo{white-space:normal}
+	}
+</style>
+</head>
+<body>
+<main>
+	<nav aria-label="Primary navigation">
+		<a class="brand" href="Homepage.html">Group Activity</a>
+		<div class="nav-links">
+			<a class="active" href="Homepage.html" aria-current="page">Home</a>
+			<a href="#AboutPage.html">About</a>
+			<a href="ContactUs.html">Contact Us</a>
+			<a href="LoginPage.html">Log in</a>
+			<a href="Dashboard.html">Dashboard</a>
+		</div>
+	</nav>
+
+	<section class="content">
+		<h1>Navigation &amp; Footer</h1>
+		<p>This shared layout keeps the group website consistent across every page.</p>
+	</section>
+
+	<footer>
+		<span>© 2026 Group Activity · IPT2 — 4th Year · Cortez, Rosales, Taclibon, Tolenada, Ventura</span>
+		<a class="footer-repo" href="https://github.com/InVerted99/Github-Collaboration/tree/master">View repository on GitHub</a>
+	</footer>
+</main>
+</body>
+</html>
+ 
